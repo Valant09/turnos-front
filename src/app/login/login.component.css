@@ -18,7 +18,7 @@ a {
 
 h1 {
   font-size:30px; /* Cambia el tamaño según tu preferencia */
-  color: #7f5d44;/* Cambia el color según tu preferencia */
+  color: #1890FF;/* Cambia el color según tu preferencia */
   font-family: 'Cormorant Garamond', sans-serif;
 }
 
@@ -72,8 +72,41 @@ h3 {
 }
 
 
+/* Estilos  botónes redes sociales */
 
+.social-button {
+    background-color: #4285F4;
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 15px 30px; /* Espaciado interno (ajusta según sea necesario) */
+    font-size: 14px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px; 
+    height: 50px;
+    font-family: 'Cormorant Garamond', sans-serif;
+    
+}
 
+.google-button {
+    background-color: #4285F4;
+}
+
+.github-button {
+    background-color: #333;
+}
+
+.facebook-button {
+    background-color: #3b5998;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+}
 
 /* STRUCTURE */
 

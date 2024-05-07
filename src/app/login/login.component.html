@@ -8,7 +8,7 @@
         <div id="formContent">
     
           <div class="fadeIn first">
-            <!-- <img src="assets\img\Login logo.png" id="icon" alt="User Icon" /> -->
+            <!-- <img src="assets\img\github-logo.png" id="icon" alt="User Icon" /> -->
     
           </div>
           <h1>Iniciar Sesión</h1>
@@ -19,10 +19,35 @@
           </form>
           <div>
             <h3 [ngClass]="'Create-count'" [routerLink]="['/recuperar-contrasena']">¿Olvidó su contraseña?</h3>
-            <h3>¿No tiene una cuenta?</h3>
+            <!-- <h3>¿No tiene una cuenta?</h3> -->
             <h3 [ngClass]="'Create-count'" [routerLink]="['/register']">Crear cuenta</h3>
           </div>
+          <div>
+            <div class="button-container">
+             <button type="button" class=" social-button google-button">
+                <img src="assets/img/google-logo.png" alt="Google logo" width="20" height="20">
+                Iniciar sesión con Google
+              </button>
+            </div>
+            
+            <div class="button-container">
+              <button type="button" class=" social-button github-button">
+                <img src="assets/img/github-logo.png" alt="GitHub logo" width="20" height="20">
+                Iniciar sesión con GitHub
+              </button>
+            </div>
+
+            <div class="button-container">
+            <button type="button" class=" social-button facebook-button">
+              <img src="assets/img/facebook-logo.png" alt="Facebook logo" width="20" height="20">
+              Iniciar sesión con Facebook
+            </button>
+          </div>
         </div>
+        <div>
+          
+        </div>
+
       </div>
     
     
