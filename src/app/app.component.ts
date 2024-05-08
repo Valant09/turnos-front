@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthConfig, NullValidationHandler, OAuthModule, OAuthService } from 'angular-oauth2-oidc';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -9,7 +11,7 @@ import { AuthConfig, NullValidationHandler, OAuthModule, OAuthService } from 'an
 export class AppComponent {
   title = 'turnos-front';
 
-  constructor(private oauthService: OAuthService){
+  constructor(private oauthService: OAuthService,private router: Router){
     this.configure();
   }
 
@@ -29,9 +31,12 @@ export class AppComponent {
       this.oauthService.tryLogin());
   }
   login(): void {
+    console.log('login');
     this.oauthService.initImplicitFlowInternal();
   }
   logout(): void {
     this.oauthService.logOut();
+    this.router.navigate(['']);
+
   }
 }

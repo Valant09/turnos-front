@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
 import { OAuthModule } from 'angular-oauth2-oidc';
 
 @NgModule({
@@ -21,7 +20,7 @@ import { OAuthModule } from 'angular-oauth2-oidc';
     HttpClientModule,
     OAuthModule.forRoot({
       resourceServer: {
-        allowedUrls: ['http://localhost:8080/api'],
+        allowedUrls: ['http://localhost:8080'],
         sendAccessToken: true
       }
     })
