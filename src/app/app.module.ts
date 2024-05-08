@@ -5,8 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
-
+import { OAuthModule } from 'angular-oauth2-oidc';
 
 @NgModule({
   declarations: [
@@ -16,10 +17,16 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
-
+    FormsModule,
+    HttpClientModule,
+    OAuthModule.forRoot({
+      resourceServer: {
+        allowedUrls: ['http://localhost:8080/api'],
+        sendAccessToken: true
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
-})
+}) 
 export class AppModule { }
