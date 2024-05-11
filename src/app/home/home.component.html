@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs a la derecha y a la izquierda</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left card">
+            <!-- Contenido del div izquierdo -->
+            <h2>Contenido a la izquierda</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed nisi nec lorem lacinia feugiat.</p>
+        </div>
+        <div class="right card">
+            <!-- Contenido del div derecho -->
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <div id="slides">
+                    <div id="overflow">
+                        <div class="inner">
+                            <div class="slide slide_1">
+                                <div class="slide-content">
+                                    <img src="https://cafe1820.com/wp-content/uploads/2020/05/5c1cbc482d5d7_blob.jpg"
+                                        class="slide-image" alt="imagenes">
+                                </div>
+                            </div>
+                            <div class="slide slide_2">
+                                <div class="slide-content">
+                                    <img src="https://cafe1820.com/wp-content/uploads/2021/10/cafe-como-simbolo-nacional-1.jpg"
+                                        class="slide-image" alt="imagenes">
+                                </div>
+                            </div>
+                            <div class="slide slide_3">
+                                <div class="slide-content">
+                                    <img src="https://cafe1820.com/wp-content/uploads/2022/08/El-cafe-descafeinado-contiene-cafeina.jpg"
+                                        class="slide-image" alt="imagenes">
+                                </div>
+                            </div>
+                            <div class="slide slide_4">
+                                <div class="slide-content">
+                                    <img src="https://cafe1820.com/wp-content/uploads/2019/06/Beneficios-del-cafe%CC%81-que-no-conoci%CC%81a.jpg"
+                                        class="slide-image" alt="imagenes">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+                <div id="bullets">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
