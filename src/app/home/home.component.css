@@ -1,4 +1,7 @@
 
+.title {
+    text-align: center;
+}
 
 .login-button {
     background-color: #4285F4;
@@ -22,6 +25,10 @@
     /* align-items: center; */
     margin-left: 70px;
     margin-top: 100px;
+}
+.column {
+    flex: 1; /* Esto hace que cada columna ocupe la misma cantidad de espacio */
+    padding: 10px; /* Esto añade un poco de espacio alrededor de cada columna */
 }
 .right {
     width: 50%; /* Ancho del div derecho */
