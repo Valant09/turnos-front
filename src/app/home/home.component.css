@@ -3,15 +3,32 @@
     text-align: center;
 }
 
+.top-bar {
+  display: flex;
+  height: 50px; /* Ajusta este valor para cambiar la altura de la barra superior */
+  justify-content: flex-end; /* Esto alinea el botón de inicio de sesión a la derecha */
+  padding: 3px;
+  background-color: #f8f8f8; 
+}
+
+.top-bar-text {
+  text-align: center;
+  flex-grow: 1; /* Esto hace que el texto ocupe todo el espacio disponible */
+}
 .login-button {
-    background-color: #4285F4;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
+  background-color: #4285F4;
+  height: 15px; 
+  width: 110px;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  display: flex; /* Esto convierte el botón en un contenedor flex */
+  align-items: center; /* Esto centra el texto verticalmente */
+  justify-content: center; /* Esto centra el texto horizontalmente */
 }
 .container {
     display: flex;
