@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 .title {
     text-align: center;
 }
@@ -14,6 +14,9 @@
 .top-bar-text {
   text-align: center;
   flex-grow: 1; /* Esto hace que el texto ocupe todo el espacio disponible */
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }
 .login-button {
   background-color: #4285F4;
