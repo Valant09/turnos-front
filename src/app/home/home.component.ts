@@ -51,7 +51,27 @@ export class HomeComponent implements OnInit{
     console.log('login');
     window.location.href = 'http://localhost:8080';
     // this.oauthService.initImplicitFlowInternal();
+
   }
+//Logica para redirigir a la pagina de admin o user con el token
+// login(): void {
+//   this.oauthService.initImplicitFlow().then(() => {
+//     const token = this.oauthService.getAccessToken();
+//     if (token) {
+//       const decodedToken = jwt_decode(token);
+//       if (decodedToken.roles.includes('admin')) {
+//         this.router.navigate(['/admin']);
+//       } else if (decodedToken.roles.includes('user')) {
+//         this.router.navigate(['/user']);
+//       }
+//     } else {
+//       this.router.navigate(['/home']);
+//     }
+//   });
+// }
+// }
+
+
   logout(): void {
     this.oauthService.logOut();
     this.router.navigate(['']);
