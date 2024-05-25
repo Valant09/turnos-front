@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { OAuthModule } from 'angular-oauth2-oidc';
 import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
+import { AdminModule } from './admin/admin.module';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { UserComponent } from './user/user.component';
     UserComponent
   ],
   imports: [
+    AdminModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
