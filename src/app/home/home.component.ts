@@ -49,7 +49,7 @@ export class HomeComponent implements OnInit{
 
   login(): void {
     console.log('login');
-    window.location.href = 'http://localhost:8080';
+    // window.location.href = 'http://localhost:8080';
     // this.oauthService.initImplicitFlowInternal();
 
   }

@@ -60,7 +60,7 @@
     margin-top: 100px;
 }
 body {
-    background-image: url("/assets/img/Background.png");
+    /* background-image: url("/assets/img/Background.png"); */
     background-repeat: no-repeat;
     background-size: cover;
 }
