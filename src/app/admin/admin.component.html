@@ -4,36 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin page</title>
+    <title>Divs a la derecha y a la izquierda</title>
 
 </head>
 
-<body>
-    <!-- <div class="top-bar">
-        <div class="top-bar-text">Administrador</div>
-        <div>
-            <button class="custom-top-button">
-                <img src="assets\img\notification.png" alt="Logo 1">
-            </button>
+<body class ="body">
+    <div class="container">
+        <div class="left ">
+            <div class="left-info">
+                <div class="info-item flex-column">
+                    <span class="label">Trámite actual</span>
+                    <span class="value">ADMINISTRACIÓN</span>
+                </div>
+                <div class="info-item flex-column">
+                    <span class="label">Turno actual</span>
+                    <span class="value">AD004</span>
+                </div>
+                <div class="info-item flex-column">
+                    <span class="label">Estado del turno</span>
+                    <span class="value">LLAMADO</span>
+                </div>
+                <div class="info-item flex-column">
+                    <span class="label">Tiempo de atención</span>
+                    <span class="value">00:00:00</span>
+                </div>
+                <div class="info-item flex-column">
+                    <span class="label">Turnos en espera</span>
+                    <span class="value">8</span>
+                </div>
+                <div class="info-item flex-column">
+                    <span class="label">Tiempo de espera</span>
+                    <span class="value">00:02:18</span>
+                </div>
+                <div class="info-item flex-column">
+                    <span class="label">Turnos atendidos</span>
+                    <span class="value">3</span>
+                </div>
+                <div class="info-item flex-column">
+                    <span class="label">Tiempo promedio</span>
+                    <span class="value">00:10:25</span>
+                </div>
+                <div class="info-item flex-column">
+                    <span class="label">Turnos anulados</span>
+                    <span class="value">0</span>
+                </div>
+            </div>
+
         </div>
 
+
+        <div class="right">
+            <div class="button-container">
+                <button class="custom-button">
+                    <img src="assets\img\NextButton.png" alt="Logo 1">
+                </button>
+                <!-- Repite el botón 5 veces más -->
+                <button class="custom-button">
+                    <img src="assets\img\FinishButton.png" alt="Logo 2">
+                </button>
+                <button class="custom-button">
+                    <img src="assets\img\CallButton.png" alt="Logo 3">
+                </button>
+                <button class="custom-button">
+                    <img src="assets\img\AnulateButton.png" alt="Logo 4">
+                </button>
+                <button class="custom-button">
+                    <img src="assets\img\TakeCareButton.png" alt="Logo 5">
+                </button>
+            </div>
+        </div>
+        <!-- ... -->
     </div>
 
-    <div class="left-bar">
-        <div>
-            <button class="custom-button" [routerLink]="['/admin/perfil']">
-                <img src="assets\img\ProfileAdmin.png" alt="Logo 1">
-            </button>
-            <button class="custom-button" [routerLink]="['/admin']">
-                <img src="assets\img\Home.png" alt="Logo 2">
-            </button>
-            <button class="custom-button-shift" [routerLink]="['/admin/turnos']">
-                <img src="assets\img\Shifts.png" alt="Logo 3">
-            </button>
-        </div>
-        <button class="custom-button">
-            <img src="assets\img\Logout.png" alt="Logo 4">
-        </button>
-    </div> -->
-    
 </body>
+
+</html>

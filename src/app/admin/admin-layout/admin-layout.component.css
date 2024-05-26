@@ -67,3 +67,7 @@
     45%;
     height: 45%;
 }
+.content {
+    margin-top: 50px; /* Ajusta este valor según el tamaño de tu barra superior */
+    margin-left: 110px; /* Ajusta este valor según el tamaño de tu barra lateral */
+}
