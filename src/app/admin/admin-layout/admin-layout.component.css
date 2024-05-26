@@ -4,8 +4,8 @@
 .top-bar {
     display: flex;
     height: 50px;
-    /* Ajusta este valor para cambiar la altura de la barra superior */
     justify-content: flex-end;
+    margin-top: 0px;
     /* Esto alinea el botón de inicio de sesión a la derecha */
     /* padding: 3px;     */
     background-color: #f8f8f8;
@@ -68,6 +68,6 @@
     height: 45%;
 }
 .content {
-    margin-top: 50px; /* Ajusta este valor según el tamaño de tu barra superior */
-    margin-left: 110px; /* Ajusta este valor según el tamaño de tu barra lateral */
+    margin-top: 50px; 
+    margin-left: 110px; 
 }
